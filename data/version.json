@@ -1,0 +1,24 @@
+{
+	"app": 1,
+	"kancolle":{
+		
+	},
+	"kanpani":{
+		
+	},
+	"olet":{
+		
+	},
+	"shirocolle":{
+		
+	},
+	"shirohime":{
+		"elements": 1,
+		"affairs": 1,
+		"castles": 1,
+		"info": 1,
+		"messages": 1,
+		"other": 1,
+		"quests": 1
+	}
+}
