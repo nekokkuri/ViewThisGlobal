@@ -3,5 +3,8 @@
 	"name": "Based Viewer",
 	"short_name": "BV",
 	"description": "Global Japanese moe-game viewer!",
-	"version": "1"
+	"version": "1",
+	"background": {
+		"scripts": ["js/background.js"]
+	}
 }
