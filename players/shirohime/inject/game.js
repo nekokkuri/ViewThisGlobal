@@ -1,13 +1,19 @@
 /* GAME FRAME RESIZING
 ------------------------------------*/
 $(window).on("load", function (){
+	
+	// Send Screen Size to Player
 	chrome.runtime.sendMessage({
 		game:"shirohime",
-		action:"screen_size",
-		value: $(document).height()
+		action:"pageLoad",
+		url: window.location.href,
+		screen: $(document).height()
 	}, function(response) {});
 	
+	// If game timers exist
 	if($("#my_hime_task").length>0){
+	
+		// Get all timer values
 		var timers = [];
 		$(".is-countdown").each(function(){
 			timers.push({
@@ -16,6 +22,8 @@ $(window).on("load", function (){
 				time: $(this).text().substring(3)
 			});
 		});
+		
+		// Send timer values to Player
 		chrome.runtime.sendMessage({
 			game:"shirohime",
 			action:"timers",
@@ -26,6 +34,7 @@ $(window).on("load", function (){
 });
 
 $(window).on("resize", function (){
+	// Send new Screen Size to Player
 	chrome.runtime.sendMessage({
 		game:"shirohime",
 		action:"screen_size",
@@ -34,48 +43,34 @@ $(window).on("resize", function (){
 });
 
 
-/* EMBED TOUCH EVENTS
-------------------------------------*/
-chrome.runtime.sendMessage({
-	game:"shirohime",
-	action:"gameUrl",
-	value: window.location.href
-}, function(response){});
-
-
-/* EMBED TOUCH EVENTS
+/* Get Boot Data from Background
 ------------------------------------*/
 var s = document.createElement('script');
+var translations = {};
+var elements = "";
 chrome.runtime.sendMessage({
 	game:"shirohime",
-	action:"inlineScript"
+	action:"boot"
 }, function(response) {
-	if(response.source!=""){
+	// cTouch Injection
+	if(response.enabled.ctouch==1){
 		s.type = 'text/javascript';
 		s.id = 'shh_touch';
 		s.innerText = response.source;
 		document.documentElement.appendChild(s);
 	}
-});
-
-
-/* GET TRANSLATIONS
-------------------------------------*/
-var translations = {};
-var elements = "";
-chrome.runtime.sendMessage({
-	game:"shirohime",
-	action:"translations"
-}, function(response) {
+	
+	// In-line Translations
 	if(response.enabled.inline==1){
 		translations = response.translations;
 		elements = response.elements;
 		implementTranslations();
 	}
 	
+	// Image replacement
 	if(response.enabled.image==1){
 		var link = document.createElement("link");
-		link.href = chrome.extension.getURL("inject/game.css");
+		link.href = chrome.extension.getURL("players/shirohime/inject/game.css");
 		link.type = "text/css";
 		link.rel = "stylesheet";
 		document.getElementsByTagName("head")[0].appendChild(link);
@@ -83,14 +78,14 @@ chrome.runtime.sendMessage({
 });
 
 
-/* TRANSLATE ON-CLICK (for popups)
+/* After-load pop-up translation
 ------------------------------------*/
 document.addEventListener('mousedown', function(e){
 	setTimeout(implementTranslations, 300)
 },true);
 
 
-/* IMPLEMENT TRANSLATIONS ON-SCREEN
+/* Implement translations
 ------------------------------------*/
 function implementTranslations(){
 	$(elements).each(function(){
@@ -103,8 +98,6 @@ function implementTranslations(){
 			if($(this).text().substr(0,3)=="レベル"){
 				var levelMsgs = $(this).text().match(/\d+/g);
 				$(this).html("Level "+levelMsgs[0]);
-			}else{
-				// console.log("[Shh] Untranslated: "+$(this).text().trim());
 			}
 		}
 	});
