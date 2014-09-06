@@ -1,0 +1,271 @@
+body {
+	background:#eee;
+}
+#wrapper {
+	width:960px;
+	margin:10px auto;
+	font-family:Arial;
+	font-size:12px;
+}
+
+/* GAME BOX
+------------------------------*/
+#deviceContainer {
+	width:500px;
+	height:750px;
+	overflow:hidden;
+	float:left;
+}
+#deviceBox {
+	float:right;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background:#333;
+}
+#deviceView {
+	margin:20px;
+	background:#000;
+	overflow-x:hidden;
+	overflow-y:scroll;
+}
+#gameFrame {
+	background:#fff;
+	margin:0px;
+	padding:0px;
+	min-height:750px;
+}
+
+/* DATA BOX
+------------------------------*/
+#dataBox {
+	width:450px;
+	height:720px;
+	float:right;
+}
+
+#dataHead {
+	width:450px;
+	height:30px;
+	line-height:30px;
+	margin:0px 0px 10px 0px;
+}
+#shh_title {
+	width:60px;
+	height:30px;
+	font-size:20px;
+	font-weight:bold;
+	float:left;
+}
+#address {
+	width:390px;
+	height:30px;
+	float:left;
+}
+#addressBar {
+	width:390px;
+	height:20px;
+	margin:4px 0px;
+	border:1px inset;
+	background:#ffc;
+	font-size:11px;
+}
+
+#dataNavs {
+	width:450px;
+	height:23px;
+}
+#dataNavs .dataNav {
+	padding:0px 15px;
+	margin:0px 0px 0px 5px;
+	height:22px;
+	line-height:24px;
+	text-align:center;
+	font-size:14px;
+	font-weight:bold;
+	background:#ddd;
+	float:left;
+	border:1px solid #ccc;
+}
+#dataNavs .dataNav.active {
+	background:#fff;
+	height:23px;
+	border-bottom:0px none;
+}
+
+#dataTabs {
+	width:450px;
+	border:1px solid #ccc;
+	background:#fff;
+}
+#dataTabs .dataTab {
+	min-height:500px;
+	padding:5px 0px 0px 0px;
+	display:none;
+}
+
+/* ----- TAB COMMONS ----- */
+.section {
+	width:440px;
+	margin:0px 0px 10px 5px;
+}
+.sectionHead {
+	height:24px;
+	line-height:24px;
+	font-weight:bold;
+	font-size:14px;
+	/*background:#def;*/
+	/*padding:0px 10px;*/
+	border-bottom:1px solid #ccc;
+}
+.sectionBody {
+	/*background:#f6f6f6;*/
+	padding:5px 10px;
+	line-height:15px;
+}
+.listing {
+	list-style-type: circle;
+	padding:0px 0px 0px 15px;
+}
+.blue_link {
+	color:#00f;
+}
+.sectionNote {
+	margin:0px 0px 5px 0px;
+}
+
+/* ----- TAB: TOOLS ----- */
+#screenshot_btn {
+	width:150px;
+	height:24px;
+	line-height:24px;
+	font-size:14px;
+	font-weight:bold;
+	background:#afa;
+	text-align:center;
+	border:2px outset #afa;
+}
+#screenshot_process {
+	
+}
+.quickLink {
+	width:95px;
+	height:24px;
+	line-height:24px;
+	text-align:center;
+	background:#def;
+	margin:0px 2px 5px;
+	float:left;
+	border:1px outset;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+.quickLink a {
+	color:#00f;
+}
+
+#timersBox {
+	width:420px;
+}
+.timerBox {
+	width:420px;
+	height:24px;
+	line-height:24px;
+	margin:0px 0px 5px 0px;
+}
+.timerBox.my_government_area {
+	background:#fcc;
+}
+.timerBox.my_hime_repair_area {
+	background:#cfc;
+}
+.timerBox.my_hime_build_area {
+	background:#FFE8C6;
+}
+.timerBox.my_facility_build_area {
+	background:#FFE8C6;
+}
+.timerBox.my_hime_rebuild_area {
+	background:#def;
+}
+.timerBox.my_facility_rebuild_area {
+	background:#def;
+}
+.timerBox .timerTime {
+	width:100px;
+	height:24px;
+	float:left;
+	text-align:center;
+	font-size:14px;
+	font-weight:bold;
+}
+.timerBox .timerName {
+	width:320px;
+	height:24px;
+	float:left;
+}
+
+
+/* ----- TAB: QUESTS ----- */
+
+
+/* ----- TAB: FAQ ----- */
+
+
+/* ----- TAB: SETTINGS ----- */
+.settingsRow {
+	width:420px;
+	height:22px;
+	line-height:22px;
+	margin:0px 0px 3px 0px;
+}
+.settingsControl {
+	width:20px;
+	height:22px;
+	float:left;
+	margin:0px 5px 0px 0px;
+	text-align:center;
+}
+.settingsLabel {
+	width:380px;
+	height:22px;
+	float:left;
+	cursor:hand;
+	cursor:pointer;
+}
+.settingsRow:hover {
+	background:#ffc;
+}
+
+/* ----- TAB: ABOUT ----- */
+.team {
+	width:210px;
+	height:30px;
+	margin:0px 0px 10px 0px;
+	float:left;
+}
+.team_img {
+	width:30px;
+	height:30px;
+	float:left;
+	margin:0px 10px 0px 0px;
+}
+.team_img img {
+	width:30px;
+	height:30px;
+}
+.team_name {
+	width:170px;
+	height:30px;
+	line-height:30px;
+	float:left;
+	font-weight:bold;
+}
+
+
+/* FACTORY
+------------------------------*/
+#factory {
+	display:none;
+}
