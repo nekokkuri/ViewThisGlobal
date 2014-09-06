@@ -4,13 +4,6 @@ function followAddressBar(){
 	$("#gameFrame").attr("src", $("#addressBar").val());
 }
 
-function resetToDefaults(){
-	localStorage.clear();
-	for(i in default_options){
-		localStorage[i] = default_options[i];
-	}
-}
-
 $(document).ready(function(){
 	
 	/* COMMON UI
@@ -42,17 +35,17 @@ $(document).ready(function(){
 	
 	/* SCREEN SIZE
 	---------------------------------------*/
-	switch(localStorage['screen_size']){
+	switch(localStorage['SH_screen_size']){
 		case "1": screen_size = [500,750]; break;
 		case "2": screen_size = [440,660]; break;
 		case "3": screen_size = [380,570]; break;
 		default: screen_size = [440,660]; break;
 	}
 	
-	$("#screensize"+localStorage['screen_size']).prop("checked", true);
+	$("#screensize"+localStorage['SH_screen_size']).prop("checked", true);
 	
 	$("input[name=screensize]").on('change', function(){
-		localStorage['screen_size'] = $(this).val();
+		localStorage['SH_screen_size'] = $(this).val();
 		window.location.reload();
 	});
 	
@@ -70,38 +63,38 @@ $(document).ready(function(){
 	
 	/* ENGLISH TRANSLATIONS
 	---------------------------------------*/
-	$("#SET_tlimage").prop("checked", (localStorage['TL_image']==1)?true:false);
+	$("#SET_tlimage").prop("checked", (localStorage['SH_TL_image']==1)?true:false);
 	$("#SET_tlimage").on('change', function(){
-		localStorage['TL_image'] = ($(this).prop("checked"))?1:0;
+		localStorage['SH_TL_image'] = ($(this).prop("checked"))?1:0;
 		followAddressBar();
 	});
 	
-	$("#SET_tlinline").prop("checked", (localStorage['TL_inline']==1)?true:false);
+	$("#SET_tlinline").prop("checked", (localStorage['SH_TL_inline']==1)?true:false);
 	$("#SET_tlinline").on('change', function(){
-		localStorage['TL_inline'] = ($(this).prop("checked"))?1:0;
+		localStorage['SH_TL_inline'] = ($(this).prop("checked"))?1:0;
 		followAddressBar();
 	});
 	
 	
 	/* TOUCHSCREEN EMULATION
 	---------------------------------------*/
-	$("#SET_ctouch").prop("checked", (localStorage['ctouch']==1)?true:false);
+	$("#SET_ctouch").prop("checked", (localStorage['SH_ctouch']==1)?true:false);
 	$("#SET_ctouch").on('change', function(){
-		localStorage['ctouch'] = ($(this).prop("checked"))?1:0;
+		localStorage['SH_ctouch'] = ($(this).prop("checked"))?1:0;
 		followAddressBar();
 	});
 	
 	
 	/* TIMERS
 	---------------------------------------*/
-	$("#SET_notifscreen").prop("checked", (localStorage['timer_screen']==1)?true:false);
+	$("#SET_notifscreen").prop("checked", (localStorage['SH_timer_screen']==1)?true:false);
 	$("#SET_notifscreen").on('change', function(){
-		localStorage['timer_screen'] = ($(this).prop("checked"))?1:0;
+		localStorage['SH_timer_screen'] = ($(this).prop("checked"))?1:0;
 	});
 	
-	$("#SET_notifsound").prop("checked", (localStorage['timer_sound']==1)?true:false);
+	$("#SET_notifsound").prop("checked", (localStorage['SH_timer_sound']==1)?true:false);
 	$("#SET_notifsound").on('change', function(){
-		localStorage['timer_sound'] = ($(this).prop("checked"))?1:0;
+		localStorage['SH_timer_sound'] = ($(this).prop("checked"))?1:0;
 	});
 	
 });
