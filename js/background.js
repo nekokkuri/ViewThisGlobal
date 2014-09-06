@@ -1,13 +1,43 @@
-console.log("Starting BasedViewer...");
-
+/* APP SETTINGS
+------------------------------------*/
 var default_options = {
 	region_cookies: 1,
-	profiles:[]
+	profiles:[
+		
+	]
 };
 
 for(i in default_options){
 	if(typeof localStorage[i] == "undefined"){
-		console.log("Setting default value of "+i+" to "+default_options[i]);
 		localStorage[i] = default_options[i];
 	}
 }
+
+/* REQUEST LISTENER
+------------------------------------*/
+chrome.runtime.onMessage.addListener(function(request, sender, response) {
+	/* KANCOLLE */
+	if(request.game==="kancolle"){
+		
+	}
+	
+	/* KANPANI */
+	if(request.game==="kanpani"){
+		
+	}
+	
+	/* OLET */
+	if(request.game==="olet"){
+		
+	}
+	
+	/* SHIROCOLLE */
+	if(request.game==="shirocolle"){
+		
+	}
+	
+	/* SHIROHIME */
+    if(request.game==="shirohime"){
+		
+	}
+});
