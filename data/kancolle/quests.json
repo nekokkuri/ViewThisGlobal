@@ -1,0 +1,295 @@
+{
+	"108":{
+		"name":"Form the Tenryuu-class!",
+		"desc":"Have Tenryuu (天龍) and Tatsuta (龍田) in your main fleet."
+	},
+	"109":{
+		"name":"Form the Sendai-class!",
+		"desc":"Have Sendai (川内), Jintsuu (神通) and Naka (那珂) in your main fleet."
+	},
+	"114":{
+		"name":"Form the Nagumo Task Force!",
+		"desc":"Have ONLY Akagi (赤城), Kaga (加賀), Hiryuu (飛龍) and Souryuu (蒼龍) in your main fleet."
+	},
+	"117":{
+		"name":"Form a Carrier Task Force in the Second Fleet!",
+		"desc":"Have a CV/CVL and 3 DD in your second fleet."
+	},
+	"119":{
+		"name":"Form the Mikawa Fleet!",
+		"desc":"Have Choukai (鳥海), Aoba (青葉), Kako (加古), Furutaka (古鷹), Tenryuu (天龍) and a FAST speed ship in your main fleet."
+	},
+	"120":{
+		"name":"Form a Submarine Fleet!",
+		"desc":"Have 2 SS in your main fleet."
+	},
+	
+	"136":{
+		"name":"Form the new 13th Destroyer Fleet",
+		"desc":"Have only Mutsuki (睦月), Yayoi (弥生), Uzuki (卯月) and Mochizuki (望月) in your fleet."
+	},
+	"137":{
+		"name":"Form the 5th Fleet",
+		"desc":"Have Myoukou (妙高), Nachi (那智) and Haguro (羽黒) in your fleet."
+	},
+	"138":{
+		"name":"Form the new 2nd Carrier Division",
+		"desc":"Have Hiryuu Kai Ni (飛龍改二, as the flagship), Souryuu (蒼龍) and 2 destroyers in your fleet."
+	},
+	"139":{
+		"name":"Form the 6th Submarine Fleet",
+		"desc":"Have a submarine tender and 4 (or more) submarines in your fleet."
+	},
+	"140":{
+		"name":"Myoukou Kai Ni",
+		"desc":"Have Myoukou Kai2 in your fleet as flagship."
+	},
+	
+	"201":{
+		"name":"Daily Sortie 1",
+		"desc":"Defeat an enemy fleet."
+	},
+	"206":{
+		"name":"Sortie the Torpedo Squadron!",
+		"desc":"Deploy a fleet with a CL as flagship and 3 DD as escorts."
+	},
+	"212":{
+		"name":"Daily Sortie 6",
+		"desc":"Sink 5 enemy transport ships."
+	},
+	"215":{
+		"name":"Second Fleet Sortie!",
+		"desc":"Deploy your 2nd Fleet on a combat mission."
+	},
+	"216":{
+		"name":"Daily Sortie 2",
+		"desc":"Defeat the flagship of an enemy fleet."
+	},
+	"218":{
+		"name":"Daily Sortie 5",
+		"desc":"Sink 3 enemy transport ships."
+	},
+	"221":{
+		"name":"Weekly Sortie 4",
+		"desc":"Sink 50 transport ships."
+	},
+	"226":{
+		"name":"Daily Sortie 7",
+		"desc":"Defeat 5 bosses in World 2."
+	},
+	"229":{
+		"name":"Weekly Sortie 6",
+		"desc":"Defeat 12 bosses in World 4."
+	},
+	"241":{
+		"name":"Weekly Sortie 7",
+		"desc":"Defeat 5 bosses in World 3-3 and 3-4. "
+	},
+	"247":{
+		"name":"Sortie an aviation battleship fleet!",
+		"desc":"Have 2 BBV ships in your main fleet and score a victory against World 4-4 Boss."
+	},
+	"248":{
+		"name":"13th Destroyer Fleet's Anti-Submarine Patrol",
+		"desc":"Deploy Mutsuki (睦月), Yayoi (弥生), Uzuki (卯月) and Mochizuki (望月) to World 1-5."
+	},
+	"249":{
+		"name":"Deploy the 5th Fleet",
+		"desc":"Deploy Myoukou (妙高), Nachi  (那智) and Haguro (羽黒) to World 2-5. You may add 3 other ships. Score an S rank victory against the boss."
+	},
+	"250":{
+		"name":"Deploy the new 2nd Carrier Division",
+		"desc":"Deploy Hiryuu Kai Ni (飛龍改二) as the flagship, Souryuu (蒼龍) and two destroyers to World 5-2. You may add 2 other ships. Score an S rank victory against the boss."
+	},
+	
+	
+	"301":{
+		"name":"First Exercise!",
+		"desc":"Challenge another fleet in practice mode."
+	},
+	"302":{
+		"name":"Weekly Exercises",
+		"desc":"Get 20 victories in practice mode within the same week."
+	},
+	"303":{
+		"name":"Daily Exercises 1",
+		"desc":"Challenge 3 other fleets in practice mode within the same day."
+	},
+	"304":{
+		"name":"Daily Exercises 2",
+		"desc":"Get 5 victories in practice mode within the same day."
+	},
+	
+	"401":{
+		"name":"First Expedition",
+		"desc":"Perform an expedition."
+	},
+	"402":{
+		"name":"Daily Expeditions 1",
+		"desc":"Perform 3 successful expeditions within the same day."
+	},
+	"403":{
+		"name":"Daily Expeditions 2",
+		"desc":"Perform 10 successful expeditions within the same day."
+	},
+	"404":{
+		"name":"Weekly Expeditions",
+		"desc":"Perform 30 successful expeditions within the same week."
+	},
+	"405":{
+		"name":"The First Submarine Operation",
+		"desc":"Complete Expedition 30."
+	},
+	"406":{
+		"name":"The Second Submarine Operation",
+		"desc":"Complete Expedition 30 one more time."
+	},
+	"407":{
+		"name":"Continuation of Submarine Operations",
+		"desc":"Complete Expedition 30 two more times."
+	},
+	"409":{
+		"name":"Strategy Meeting with Overseas Submarine Dispatch!",
+		"desc":"Complete expedition 31 and receive foreign destroyer Z1!"
+	},
+	"410":{
+		"name":"Weekly Expedition 2",
+		"desc":"Complete expedition 37 or 38"
+	},
+	"411":{
+		"name":"Weekly Expedition 3",
+		"desc":"Complete expedition 37 or 38 a total of 7 times in a week"
+	},
+	"412":{
+		"name":"Strengthen the Operation of the BBV (Cont.)",
+		"desc":"Complete expedition 23 four more times."
+	},
+	"414":{
+		"name":"Blue Waters Submarine Operation",
+		"desc":"Complete expedition 39."
+	},
+	"415":{
+		"name":"Blue Waters Extended Submarine Operation",
+		"desc":"Complete expedition 39 three more times."
+	},
+	
+	
+	"501":{
+		"name":"First Supply",
+		"desc":"Resupply a ship."
+	},
+	"502":{
+		"name":"First Docking",
+		"desc":"Repair a ship."
+	},
+	"503":{
+		"name":"Daily Repairs",
+		"desc":"Repair 5 ships."
+	},
+	"504":{
+		"name":"Daily Resupplies",
+		"desc":"Resupply your ships 15 times."
+	},
+	
+	
+	"601":{
+		"name":"First Construction",
+		"desc":"Craft a ship."
+	},
+	"602":{
+		"name":"First Development",
+		"desc":"Craft a piece of equipment."
+	},
+	"603":{
+		"name":"First Dismantlement",
+		"desc":"Dismantle a ship."
+	},
+	"604":{
+		"name":"First Disposal",
+		"desc":"Scrap a piece of equipment."
+	},
+	"605":{
+		"name":"Daily Equipment Development 1",
+		"desc":"Craft a piece of equipment. (Failures are OK)"
+	},
+	"606":{
+		"name":"Daily Ship Construction 1",
+		"desc":"Craft a ship."
+	},
+	"607":{
+		"name":"Daily Development 2",
+		"desc":"Craft 3 pieces of equipment. (Failures are OK)"
+	},
+	"608":{
+		"name":"Daily Construction 2",
+		"desc":"Craft 3 ships."
+	},
+	"609":{
+		"name":"Daily Dismantlement",
+		"desc":"Scrap 2 ships."
+	},
+	"610":{
+		"name":"Preparation for LCS (Part 2)",
+		"desc":"Scrap equipment 4 times."
+	},
+	"611":{
+		"name":"Preparation for Transport Drum Canisters",
+		"desc":"Scrap equipment 3 times."
+	},
+	"612":{
+		"name":"Prepare the shipping barrel",
+		"desc":"Scrap equipment 3 times to acquire a shipping barrel"
+	},
+	"613":{
+		"name":"Weekly Dismantlement",
+		"desc":"Scrap equipment 24 times."
+	},
+	"614":{
+		"name":"Model Conversion",
+		"desc":"With an aircraft carrier equipped with Type 97 Torpedo Bomber (Tomonaga Squadron) as your secretary, scrap 2 Tenzans (simultaneously) to obtain a Tenzan Model 12 (Tomonaga Squadron)."
+	},
+	
+	
+	"701":{
+		"name":"First Modernization",
+		"desc":"Perform a successful modernization."
+	},
+	"702":{
+		"name":"Daily Modernization",
+		"desc":"Perform 2 successful modernizations within the same day."
+	},
+	"703":{
+		"name":"Weekly Modernization",
+		"desc":"Perform 15 successful modernizations within the same week."
+	},
+	"704":{
+		"name":"Preparation for LSC (Part 1)",
+		"desc":"Perform 4 successful modernizations."
+	},
+	
+	
+	"801":{
+		"name":"In Preparation of Love! (Part 1)",
+		"desc":"Scrap equipment 2 times to show your love!."
+	},
+	"802":{
+		"name":"In Preparation of Love! (Part 2)",
+		"desc":"Show your love by getting 2 victories in practice mode!"
+	},
+	"803":{
+		"name":"In Preparation of Love! (Part 3)",
+		"desc":"Organize your feelings and deploy your fleet with a high level flagship (Lv.90~99)!"
+	},
+	"804":{
+		"name":"In Preparation of Love! (Final)",
+		"desc":"Deploy a fleet with a high level (Lv.90~99) flagship to 2-3 obtain an S victory or higher against the boss."
+	},
+	"805":{
+		"name":"Journey Anew!",
+		"desc":"Organize a fleet of 6 ships with your newly bonded ship of Lv.100 or more as flagship!"
+	},
+	"806":{
+		"name":"Your First Mission Together!",
+		"desc":"Deploy a fleet to 4-3 with a bonded ship of Lv.100 or more as flagship and score an S vectory or higher against the boss."
+	}
+}
