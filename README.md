@@ -47,8 +47,9 @@ Shirohime Quest is a mobile game wherein the player assumes the role of a feudal
 ### [Over Legend Endless Tower](http://www.dmm.com/netgame/feature/oletower.html)
 "Over Legend Endless Tower" (Ole Tower) is a Japanese webgame developed by SE Mobile and Online Co.Ltd. The main purpose of the game is to build an "endless" tower using different "tool girls" (KenHime) at your disposal. The game also includes a combat system in a phase-by-phase and turn-based fashion.
 
-### [Shiro Collection](http://www.dmm.com/netgame_s/shirocolle)
-Shiro Collection, also known as ShiroColle, is a Tower Defense online browser game on DMM.com. As of now, it is currently only open for pre-registration.
+### Other games planned
+* [Shiro Collection](http://www.dmm.com/netgame_s/shirocolle)
+* [Kanpani](http://www.dmm.com/netgame_s/kanpani/)
 
 ## FAQ
 
