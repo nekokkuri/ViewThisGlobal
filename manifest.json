@@ -20,5 +20,13 @@
 		},
 		"default_title": "Based Viewer",
 		"default_popup": "html/menu.html"
-	}
+	},
+	"permissions": [
+		"tabs",
+		"activeTab",
+		"notifications",
+		"webRequest",
+		"webRequestBlocking",
+		"<all_urls>"
+	]
 }
