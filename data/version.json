@@ -1,24 +1,28 @@
 {
-	"app": 1,
-	"kancolle":{
+	app: 1,
+	kancolle:{
+		experience: 1,
+		quests: 1,
+		ranks: 1,
+		stype: 1,
+		translations: 1
+	},
+	kanpani:{
 		
 	},
-	"kanpani":{
+	olet:{
 		
 	},
-	"olet":{
+	shirocolle:{
 		
 	},
-	"shirocolle":{
-		
-	},
-	"shirohime":{
-		"elements": 1,
-		"affairs": 1,
-		"castles": 1,
-		"info": 1,
-		"messages": 1,
-		"other": 1,
-		"quests": 1
+	shirohime:{
+		elements: 1,
+		affairs: 1,
+		castles: 1,
+		info: 1,
+		messages: 1,
+		other: 1,
+		quests: 1
 	}
 }
