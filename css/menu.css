@@ -1,0 +1,101 @@
+body {
+	font-family:Arial;
+}
+#wrapper {
+	width:260px;
+	overflow:hidden;
+}
+#factory {
+	display:none;
+}
+.separator {
+	border-bottom:1px solid #ccc;
+	margin:5px 5px 5px 5px;
+}
+
+/* PROFILES
+-------------------------*/
+#profiles {
+	width:260px;
+	margin:0px 0px 0px 0px;
+}
+.profile {
+	width:260px;
+	height:40px;
+	margin:0px 0px 0px 0px;
+	padding:3px 0px;
+}
+.profile:hover {
+	background:#ffc;
+}
+.profile .icon {
+	width:40px;
+	height:40px;
+	float:left;
+	padding:0px 5px 0px 5px;
+}
+.profile .icon img {
+	width:40px;
+	height:40px;
+}
+.profile .info {
+	width:180px;
+	height:40px;
+	float:left;
+	margin:0px 5px 0px 0px;
+}
+.profile .info .name {
+	width:180px;
+	height:20px;
+	line-height:20px;
+	font-size:14px;
+	font-weight:bold;
+	margin:2px 0px 0px 0px;
+}
+.profile .info .game {
+	width:180px;
+	height:16px;
+	line-height:16px;
+	font-size:10px;
+	color:#aaa;
+}
+.profile .refresh {
+	width:20px;
+	height:40px;
+	float:left;
+}
+.profile .refresh img {
+	width:20px;
+	height:20px;
+	margin:10px 0px 0px;
+}
+
+/* MENU ACTION
+-------------------------*/
+.menuAction {
+	width:260px;
+	height:30px;
+	margin:0px 0px 0px 0px;
+	padding:3px 0px;
+}
+.menuAction:hover {
+	background:#ffc;
+}
+.menuAction .icon {
+	width:30px;
+	height:30px;
+	float:left;
+	margin:0px 5px 0px 5px;
+}
+.menuAction .icon img {
+	width:30px;
+	height:30px;
+}
+.menuAction .name {
+	width:220px;
+	height:30px;
+	line-height:30px;
+	font-size:16px;
+	font-weight:bold;
+	float:left;
+}
