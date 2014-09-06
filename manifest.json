@@ -4,6 +4,12 @@
 	"short_name": "BV",
 	"description": "Global Japanese moe-game viewer!",
 	"version": "1",
+	"icons": {
+		"16": "img/icons/16.png",
+		"19": "img/icons/19.png",
+		"38": "img/icons/38.png",
+		"128": "img/icons/128.png"
+	},
 	"background": {
 		"scripts": ["js/background.js"]
 	},
