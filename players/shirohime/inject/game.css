@@ -1,0 +1,75 @@
+.my_link_quest, .my_link_build, .my_link_rebuild, .my_link_repair, .my_link_deck,
+.my_link_repair_down1, .my_link_repair_down2,
+.mypage_change_left_1, .mypage_change_right_1, .mypage_change_left_2, .mypage_change_right_2,
+#news_link, #gift_link
+{
+	background-image:url(chrome-extension://__MSG_@@extension_id__/inject/buttons1.png) !important;
+}
+
+.common_head_mypage, .common_head_menu,
+.common_footer_mypage, .common_footer_deck, .common_footer_troop, .common_footer_militaly, .common_footer_menu,
+.attr_look_hime
+{
+	background-image:url(chrome-extension://__MSG_@@extension_id__/inject/buttons2.png) !important;
+}
+
+.common_head_menu.menu_link{
+	background-image:url(chrome-extension://__MSG_@@extension_id__/inject/buttons1.png) !important;
+}
+
+.menu_troop, .menu_battle, .menu_polit, .menu_mission,
+.menu_deck, .menu_hime, .menu_facility, .menu_army,
+.menu_shop, .menu_repair, .menu_build, .menu_rebuild, .menu_chat,
+.menu_profile, .menu_friend, .menu_archives, .menu_presentbox, .menu_item,
+.menu_friendinvitation, .menu_help, .menu_setting, .menu_top, .menu_wiki
+{
+	background-image:url(chrome-extension://__MSG_@@extension_id__/inject/buttons3.png) !important;
+}
+
+#user_data_top {
+	background-image:url(chrome-extension://__MSG_@@extension_id__/inject/lord.png) !important;
+}
+
+.tit_attr, .tit_lv, .tit_proxattack, .tit_proxdef, .tit_proxspeed, .tit_ref,
+.tit_branch, .tit_stam, .tit_indiattack, .tit_indidef, .tit_luck, .tit_personal
+{
+	background-image:url(chrome-extension://__MSG_@@extension_id__/inject/stats1.png) !important;
+}
+
+.tit_hit, .tit_critical, .tit_avoid, .tit_condition,
+#attr_hime_param .tit_wood, #attr_hime_param .tit_stone, #attr_hime_param .tit_rice, #attr_hime_param .tit_army
+{
+	background-image:url(chrome-extension://__MSG_@@extension_id__/inject/stats2.png) !important;
+}
+
+.attack_area_tit {
+	background-image:url(chrome-extension://__MSG_@@extension_id__/inject/stats3.png) !important;
+}
+
+.skill_area_tit {
+	background-image:url(chrome-extension://__MSG_@@extension_id__/inject/stats4.png) !important;
+}
+
+.start_point_troop {
+	background-image:url(chrome-extension://__MSG_@@extension_id__/inject/btn_dispatch.png) !important;
+}
+
+.start_point_battle {
+	background-image:url(chrome-extension://__MSG_@@extension_id__/inject/btn_battle.png) !important;
+}
+
+.start_point_polt {
+	background-image:url(chrome-extension://__MSG_@@extension_id__/inject/btn_politics.png) !important;
+}
+
+.skill_slide_text {
+	margin-top: 10px !important;
+}
+
+html,body {
+	cursor:pointer;
+}
+
+.shh_daily { font-weight:bold; font-size:10px; color:#5c5; }
+.shh_weekly { font-weight:bold; font-size:10px; color:#c55; }
+.shh_once { font-weight:bold; font-size:10px; color:#00f; }
