@@ -28,5 +28,13 @@
 		"webRequest",
 		"webRequestBlocking",
 		"<all_urls>"
+	],
+	"content_scripts": [
+		{
+			"matches":["*://a60462.app.gree-pf.net/*"],
+			"js": ["js/jquery.js", "players/shirohime/inject/game.js"],
+			"run_at": "document_end",
+			"all_frames": true
+		}
 	]
 }
