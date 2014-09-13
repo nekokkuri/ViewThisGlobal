@@ -3,6 +3,7 @@
 var default_options = {
 	latest: 0,
 	version: 0,
+	profile_ctr: 1,
 	profiles: "[]",
 	SH_screen_size: 2,
 	SH_TL_inline: 1,
