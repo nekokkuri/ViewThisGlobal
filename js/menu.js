@@ -20,8 +20,10 @@ $(document).ready(function(){
 	$("#cookies").on('click', function(){
 		chrome.runtime.sendMessage({
 			type: "BasedViewer",
-			action: "activeCookies"
-		}, function(response){});
+			action: "activateCookies"
+		}, function(response){
+			window.close();
+		});
 	});
 	
 	$("#shirohime").on('click', function(){
