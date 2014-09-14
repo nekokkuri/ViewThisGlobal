@@ -58,7 +58,7 @@ var SH_cTouchScript = false;
 
 /* REQUEST LISTENER
 ------------------------------------*/
-chrome.runtime.onMessage.addListener(function(request, sender, response) {
+chrome.runtime.onMessage.addListener(function(request, sender, response){
 	/* KANCOLLE */
 	if(request.game==="kancolle"){
 		
