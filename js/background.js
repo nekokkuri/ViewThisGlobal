@@ -46,7 +46,6 @@ $(function(){
 			localStorage['latest'] = response;
 		}
 	});
-	
 });
 
 
