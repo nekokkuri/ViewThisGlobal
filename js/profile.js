@@ -23,7 +23,6 @@ $(document).ready(function(){
 				$("#profileID").text("#"+CurrentProfiles[ProfileCtr].id);
 				$("#profileGame img").attr("src", "../img/profiles/"+CurrentProfiles[ProfileCtr].game+".png");
 				$("#profileInput").val(CurrentProfiles[ProfileCtr].name);
-				console.log(CurrentProfiles[ProfileCtr].name);
 			}
 		}
 	}
