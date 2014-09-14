@@ -62,6 +62,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, response){
 						game: GetGameName(request.gameId),
 						link: request.gameLink
 					});
+					localStorage["profile_ctr"] = parseInt(localStorage["profile_ctr"], 10) + 1;
 					
 				}else{
 					// Update existing profile
