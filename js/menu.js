@@ -1,7 +1,10 @@
 $(document).ready(function(){
 	
 	$("#profiles .profile").on('click', function(){
-		window.open("../players/"+$(this).data('game')+"/index.html#"+$(this).data('id'));
+		window.open(
+			"../players/"+$(this).data('game')+"/index.html#"+$(this).data('id'),
+			"based_play_"+$(this).data('id')
+		);
 	});
 	
 	$("#profiles .profile .refresh").on('click', function(e){
@@ -18,16 +21,18 @@ $(document).ready(function(){
 	});
 	
 	$("#cookies").on('click', function(){
-		chrome.runtime.sendMessage({
-			type: "BasedViewer",
-			action: "activateCookies"
-		}, function(response){
-			window.close();
+		chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+			chrome.tabs.sendMessage(tabs[0].id, {
+				type: "BasedViewer",
+				action: "activateCookies"
+			}, function(response) {
+				window.close();
+			});
 		});
 	});
 	
 	$("#shirohime").on('click', function(){
-		window.open("../players/shirohime/index.html", "shh_game");
+		window.open("../players/shirohime/index.html", "based_play_shirohime");
 	});
 	
 	setTimeout(function(){
