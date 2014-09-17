@@ -51,7 +51,7 @@ $(function(){
 
 /* BROWSER PERSISTENTS
 ------------------------------------*/
-var kancolle_master = {};
+var kancolle_master = false;
 var SH_translations = false;
 var SH_cTouchScript = false;
 
@@ -62,6 +62,12 @@ chrome.runtime.onMessage.addListener(function(request, sender, response){
 	/* KANCOLLE */
 	if(request.game==="kancolle"){
 		switch(request.action){
+			case "isMasterSet":
+				if(!kancolle_master){
+					response({value:false});
+				}else{
+					response({value:true});
+				}
 			case "setMaster":
 				kancolle_master = JSON.parse(request.data);
 				response({success:true});
