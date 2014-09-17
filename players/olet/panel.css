@@ -8,3 +8,10 @@ body {
 	margin:0px auto;
 	background:#fff;
 }
+
+#logs {
+	font-family:monospace;
+	margin:10px;
+	background:#eee;
+	padding:10px;
+}
