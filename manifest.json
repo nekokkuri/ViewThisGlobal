@@ -4,6 +4,7 @@
 	"short_name": "BV",
 	"description": "All-around Japanese moe-game viewer!",
 	"version": "1",
+	"options_page": "html/options.html",
 	"devtools_page": "html/devtools.html",
 	"icons": {
 		"16": "img/icons/16.png",
