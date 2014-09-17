@@ -51,6 +51,7 @@ $(function(){
 
 /* BROWSER PERSISTENTS
 ------------------------------------*/
+var kancolle_master = {};
 var SH_translations = false;
 var SH_cTouchScript = false;
 
@@ -60,7 +61,13 @@ var SH_cTouchScript = false;
 chrome.runtime.onMessage.addListener(function(request, sender, response){
 	/* KANCOLLE */
 	if(request.game==="kancolle"){
-		
+		switch(request.action){
+			case "setMaster":
+				kancolle_master = JSON.parse(request.data);
+				response({success:true});
+			default:
+				break;
+		}
 	}
 	
 	/* KANPANI */
