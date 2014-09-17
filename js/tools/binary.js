@@ -1,0 +1,4 @@
+function HandleBinary(binData){
+	
+	return {};
+}
