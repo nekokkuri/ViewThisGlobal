@@ -33,3 +33,15 @@ body {
 	font-weight:bold;
 	text-align:center;
 }
+
+#debug {
+	width:400px;
+	height:30px;
+	margin:10px auto 0px;
+}
+#debugLog {
+	width:600px;
+	margin:10px auto 0px;
+	background:#fff;
+	font-family:monospace;
+}
