@@ -1,0 +1,14 @@
+#wrapper {
+	width:800px;
+	height:480px;
+	margin:0px auto;
+	background:#555;
+}
+#game_box {
+	width:800px;
+	height:480px;
+}
+#game_swf {
+	width:800px;
+	height:480px;
+}
