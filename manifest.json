@@ -42,14 +42,6 @@
 		},
 		{
 			"matches":[
-				"http://osapi.dmm.com/gadgets/*"
-			],
-			"js": ["js/inject/dmm_osapi.js"],
-			"run_at": "document_end",
-			"all_frames": true
-		},
-		{
-			"matches":[
 				"*://a60462.app.gree-pf.net/*"
 			],
 			"js": ["js/jquery.js", "players/shirohime/inject/game.js"],
