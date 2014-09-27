@@ -22,6 +22,9 @@ body {
 .menuAction:hover {
 	background:#ffc;
 }
+.menuAction.disabled {
+	opacity:.3;
+}
 .menuAction .icon {
 	width:30px;
 	height:30px;

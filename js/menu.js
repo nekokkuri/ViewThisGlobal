@@ -2,8 +2,10 @@ $(document).ready(function(){
 	
 	// Play a Game
 	$(".playAction").on('click', function(){
-		var game = $(this).data("game");
-		window.open("../players/"+game+"/index.html", "VTG_"+game);
+		if(!$(this).hasClass("disabled")){
+			var game = $(this).data("game");
+			window.open("../players/"+game+"/index.html", "VTG_"+game);
+		}
 	});
 	
 	// Region Cookies
