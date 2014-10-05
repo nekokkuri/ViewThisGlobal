@@ -1,0 +1,37 @@
+#dmm_ntgnavi {
+	display:none !important;
+}
+
+img[src*="spacer.gif"] {
+	display:none !important;
+}
+img[src*="log-netgame.dmm.com"] {
+	display:none !important;
+}
+
+#foot {
+	display:none !important;
+}
+
+body {
+	min-width:950px !important;
+	margin:0px !important;
+}
+
+#main-ntg {
+	margin:0px !important;
+	padding:0px !important;
+}
+
+#game_frame {
+	width:950px !important;
+	height:590px !important;
+}
+
+.area-naviapp.mg-t20 {
+	display:none !important;
+}
+
+#ntg-recommend {
+	display:none !important;
+}

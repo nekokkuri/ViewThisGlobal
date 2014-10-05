@@ -1,33 +1,50 @@
-// Get Profile ID from hash tag of URL
-var ProfileID = window.location.hash.substring(1);
-var CurrentProfiles;
-
-$(document).ready(function(){
-
-	// Get all existing profiles
-	CurrentProfiles = JSON.parse(localStorage["profiles"]);
-	
-	// Find requested profile and execute
-	for(ProfileCtr in CurrentProfiles){
-		if(CurrentProfiles[ProfileCtr].id == ProfileID){
-			document.title = "Kanpani: "+CurrentProfiles[ProfileCtr].name;
-			$("#game_swf").attr("src", CurrentProfiles[ProfileCtr].link);
-		}
-	}
-	
-	var obj = {
-		a:"b",
-		c:"d"
-	};
-	var amfs = AMF.stringify(obj);
-	console.log(amfs);
-	console.log(AMF.parse(amfs));
+// Get my tab ID for checking later
+var myTabId = 0;
+chrome.tabs.getCurrent(function(myTab){
+	myTabId = myTab.id;
 });
 
+// Wait for injection code request
+chrome.runtime.onMessage.addListener(function(request, sender, response){
+	// Check if its a code request
+	if(request.type=="BasedViewer" && request.action=="getInjectionCode"){
+		// Check if request is from the same tab
+		if(myTabId==sender.tab.id){
+			// scope is osapi
+			if(request.scope=="osapi"){
+				response({
+					script:"",
+					style:"chrome-extension://"+chrome.runtime.id+"/players/kanpani/inject/osapi.css",
+				});
+			}
+			// scope is netgame
+			if(request.scope=="netgame"){
+				response({
+					script:"",
+					style:"chrome-extension://"+chrome.runtime.id+"/players/kanpani/inject/netgame.css",
+				});
+			}
+			// scope is kanpani
+			if(request.scope=="kanpani"){
+				response({
+					script:"",
+					style:"chrome-extension://"+chrome.runtime.id+"/players/kanpani/inject/kanpani.css",
+				});
+			}
+		}
+	}
+});
+
+// onResize change frame margins
 $(window).on('resize', function(){
-	if($(document).height() > 500){
+	if($(document).height() > 610){
 		$("#wrapper").css("margin", "10px auto 0px");
 	}else{
 		$("#wrapper").css("margin", "0px auto");
 	}
 });
+
+// Focus to document every second to enable key functions
+setInterval(function(){
+	$(window).focus();
+},1000);
