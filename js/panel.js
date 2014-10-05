@@ -1,36 +1,11 @@
 var detectGameApi = -1;
 var doListen = true;
-var debugMode = false;
-
-$(document).ready(function(){
-	
-	$("#debugToggle").on('click', function(){
-		debugMode = !debugMode;
-		$(this).text((debugMode)?"Disable Debug":"Enable Debug");
-	});
-	
-});
 
 // Listen to Chrome network logs
 chrome.devtools.network.onRequestFinished.addListener(function(request) {
 	
 	// Cancel listening on marker
 	if(!doListen) return;
-	
-	/* DEBUG
-	-------------------------------------------*/
-	if(debugMode){
-		detectGameApi = request.request.url.indexOf($("#debugText").val());
-		if(detectGameApi > -1){
-			doListen = false;
-			request.getContent(function(response){
-				doListen = true;
-				$("#debugLog").append("[Based DEBUG] "+request.request.url+"<br />"+response+"<br />");
-			});
-			return true;
-		}
-	}
-	
 	
 	/* KANCOLLE (Master)
 	-------------------------------------------*/
