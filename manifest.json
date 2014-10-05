@@ -33,17 +33,25 @@
 	],
 	"content_scripts": [
 		{
-			"matches":[
-				"*://*.dmm.com/*"
-			],
+			"matches":["*://*.dmm.com/*"],
 			"js": ["js/inject/dmm_site.js"],
 			"run_at": "document_end",
 			"all_frames": true
 		},
 		{
-			"matches":[
-				"*://a60462.app.gree-pf.net/*"
-			],
+			"matches":["*://osapi.dmm.com/gadgets/*"],
+			"js": ["js/inject/dmm_osapi.js"],
+			"run_at": "document_end",
+			"all_frames": true
+		},
+		{
+			"matches":["*://www.dmm.com/netgame/*/app_id=*"],
+			"js": ["js/inject/dmm_netgame.js"],
+			"run_at": "document_end",
+			"all_frames": true
+		},
+		{
+			"matches":["*://a60462.app.gree-pf.net/*"],
 			"js": ["js/jquery.js", "players/shirohime/inject/game.js"],
 			"run_at": "document_end",
 			"all_frames": true
